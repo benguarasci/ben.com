@@ -1,0 +1,372 @@
+.App {
+    text-align: center;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ max-height: 6vh;
+ background: rgba(122, 122, 122, 0.2);
+ border-bottom: 1px solid rgba(255,255,255,0.1);
+ color: white;
+ -webkit-backdrop-filter: blur(15px);
+ backdrop-filter: blur(10px);
+ z-index: 10000;
+ transition: 300ms;
+ opacity: 0;
+}
+
+.nav.display{
+  opacity: 1;
+}
+
+.nav-item{
+  display: inline-block;
+  margin: 20px;
+}
+
+.nav.black{
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(128, 127, 127, 0.459);
+  /* background-color: rgba(255, 255, 255, 0.5);   */
+}
+
+.first{
+  height: 200vh;
+  background:
+        linear-gradient(217deg, rgba(25, 0, 255, 0.808), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(25, 0, 255, 0.808), rgba(0, 60, 255, 0) 70.71%),
+        linear-gradient(336deg, rgba(178, 228, 0, 0.8), rgba(255, 238, 0, 0.123) 70.71%);
+	background-size: 200% 200%;
+	animation: gradient 10s ease infinite;
+}
+
+.about-image{
+  height: 60vh;
+  margin-right: 90px;
+  border-radius: 30px;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 25% 25%;
+	}
+	25% {
+		background-position: 25% 75%;
+	}
+  50% {
+		background-position: 75% 75%;
+	}
+  77% {
+		background-position: 75% 25%;
+	}
+	100% {
+		background-position: 25% 25%;
+	}
+}
+
+
+.second{
+    background-color: white;
+    height: 115vh;
+}
+
+.third{
+    background-color:black;
+}
+
+.navbar{
+  display: inline-block;
+}
+
+.scroll-element{
+ 
+  display: block;
+}
+
+
+  ul.hero-list{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+  }
+
+  .hero-viewport{
+    position: relative;
+    height: 130vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .viewport-div {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 25%;
+    display: block;
+    padding-bottom: 100vh;
+    /* z-index: 10; */
+  }
+
+  .card{
+    display: inline-block;
+    margin: 5%;
+    align-items: center;
+
+    width: 20vw;
+  }
+
+  .title-card {
+    /* display: inline-block;
+    margin: 5%; */
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20px;
+    background: rgb(41, 41, 41);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    /* color: white;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(4px); */
+    box-shadow: -3px 4px 8px 0 rgba(0, 0, 0, 0.4), -3px 4px 8px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 300ms;
+  }
+
+  .card-link{
+    color: white;
+    text-decoration: none;
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;    
+    /* z-index: 100; */
+}
+
+  .title-card:hover{
+    transform: scale(1.01);
+  }
+
+  .card-image{
+    margin-top: 10%;
+    width: 50%;
+    background: white;
+    border-radius: 35px;
+  }
+
+  .card-title{
+    font-weight: bold;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 40px;
+  }
+
+  .card-text{
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+  }
+
+
+  .white-title {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 80px;
+  }
+  
+  .black-title{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 80px;
+    margin:0;
+
+  }
+
+  .about-body{
+    font-weight: bold;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 40px;
+  }
+
+  .element-container{
+    margin:auto;
+
+  }
+  
+  .fourth{
+    background-color: black;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  .blocker{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+ 
+
+/* 
+#Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  } 
+
+
+  /* Form styling */
+
+.form-container{
+  margin: auto;
+  width:500px;
+  /* z-index: 10000; */
+}
+
+  .form-title{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 80px;
+    margin: 0;
+  }
+
+  .form-submit{
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.615);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 30%;
+    color: white;
+    margin-top: 1%;
+  }
+
+  .submit-div{
+    text-align: center;
+  }
+
+  .form-group{
+    margin: 0;
+    padding:0;
+  }
+
+  .feedback-input {
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background: rgb(41, 41, 41);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid rgba(255, 255, 255, 0.774); }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 30%;
+    background:rgba(0, 122, 255, 1);
+    border-radius:30px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.2s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:rgba(10, 132, 255, 1); }
+
+
+  /* .form-input{
+    text-align: left;
+    display: inline-block;
+    margin-top:auto;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.615);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    /* text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    ;
+  }
+
+
+  .message{
+    /* display: block; 
+    background-color: rgba(255, 255, 255, 0.615);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 5px;
+    height: 20vh;
+    color: white;
+    /* text-align: left; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    vertical-align: text-top;
+    
+  }
+  ::placeholder{
+    color:rgba(255, 255, 255, 0.663);
+    padding-left: 10px;
+    
+  } */
+  
