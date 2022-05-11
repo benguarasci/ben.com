@@ -33,7 +33,7 @@ class Contact extends Component {
 
     console.log(user)
 
- axios.post('https://rentsimple.herokuapp.com/add_user', user)
+ axios.post('http://rentsimple-working.herokuapp.com/add_contact', user)
       .then(() => console.log('User info gathered'))
       .catch(err => {
         console.error(err);

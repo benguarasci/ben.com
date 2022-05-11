@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './base.css';
 import { useIntersection } from "react-use";
 import gsap from "gsap";
-import hero from "./assets/hero.mp4";
+
 import ben from "./assets/ben.jpeg"
 import ergo from "./assets/ergo.ico"
 import rentsimple from "./assets/favicon.png"
@@ -216,7 +216,7 @@ function Home() {
               <div ref = {sectionRef2} className='title-card'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
-                {/* <a href={rentsimple_link}><span className='card-link'></span></a> */}
+                <a href={rentsimple_link}><span className='card-link'></span></a>
               </div>
               <p className='card-text'> RentSimple is a simple app created to help students find housing. </p>
             </div>
@@ -224,16 +224,14 @@ function Home() {
               <div className=' title-card'>
                 <img className='card-image' src={ergo}></img>
                 <h1 className='card-title'>Ergonomyx</h1>
-                {/* <a href={ergonomyx_link}><span className='card-link'></span></a> */}
+                <a href={ergonomyx_link}><span className='card-link'></span></a>
               </div>
               <p className='card-text'> RentSimple is a simple app created to help students find housing. </p>
             </div>
         </div>
 
         <div className="third">
-            <div className="viewport-div scroll-container">
-      
-            </div>
+            
         </div>
 
         <div className="fourth">

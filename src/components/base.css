@@ -79,6 +79,7 @@
 
 .third{
     background-color:black;
+    height: 100vh;
 }
 
 .navbar{
@@ -128,7 +129,7 @@
     display: inline-block;
     margin: 5%;
     align-items: center;
-
+    /* z-index: 100; */
     width: 20vw;
   }
 
@@ -272,6 +273,7 @@
     align-self: center;
     background-color: rgba(255, 255, 255, 0.615);
     border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
     width: 30%;
     color: white;
     margin-top: 1%;
@@ -315,7 +317,8 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     width: 30%;
     background:rgba(0, 122, 255, 1);
-    border-radius:30px;
+    border-radius:3
+    0px;
     border:0;
     cursor:pointer;
     color:white;
