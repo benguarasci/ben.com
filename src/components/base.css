@@ -32,18 +32,18 @@
   opacity: 1;
 }
 
-.nav-text{
-  color: white;
+.nav.black{
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(128, 127, 127, 0.459);
+  /* background-color: rgba(255, 255, 255, 0.5);   */
 }
 
-.nav-text.black{
-  color: black;
-}
 
 .nav-item{
   display: inline-block;
   margin: 20px;
-  /* color: white; */
+  color: inherit;
   text-decoration: none;
   transition: 200ms;
 }
@@ -52,12 +52,7 @@
   transition: 200ms;
 }
 
-.nav.black{
-  color: black;
-  background: rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(128, 127, 127, 0.459);
-  /* background-color: rgba(255, 255, 255, 0.5);   */
-}
+
 
 
 .first{

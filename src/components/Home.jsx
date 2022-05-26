@@ -70,17 +70,14 @@ function hide_nav() {
 }
 
 function dark_nav() {
-  var element = document.getElementsByClassName("nav-text");
+  var element = document.getElementById("nav");
   element.classList.add("black");
 
 }
 
 function light_nav() {
-  var element = document.getElementById("nav-text");
+  var element = document.getElementById("nav");
   element.classList.remove("black");
-
-  element = document.getElementById("nav-text");
-  element.classList.add("white");
 }
 
 function remove_stick(){
@@ -177,12 +174,11 @@ function Home() {
         <div className="nav" id="nav">
         <h2>Benjamin Guarasci</h2>
         <ul className = "navbar">
-            <a className='nav-item nav-text' href="#about" id="nav">About</a>
-            <a className='nav-item nav-text' href="#projects" id="nav">Projects</a>
-            <a className='nav-item nav-text' href="#contact" id="nav">Contact</a>
-            <a className='nav-item nav-text' href ={Resume} id="nav">Resume</a>
+            <a className='nav-item' href="#about" id="nav">About</a>
+            <a className='nav-item' href="#projects" id="nav">Projects</a>
+            <a className='nav-item' href="#contact" id="nav">Contact</a>
+            <a className='nav-item' href ={Resume} id="nav">Resume</a>
         </ul>
-
         </div>
         <div className="first">
             {/* <video autoPlay loop muted>
