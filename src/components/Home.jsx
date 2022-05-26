@@ -3,6 +3,7 @@ import './base.css';
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 
+import Resume from "./assets/resume.pdf"
 import ben from "./assets/ben.jpeg"
 import ergo from "./assets/ergo.ico"
 import rentsimple from "./assets/favicon.png"
@@ -69,13 +70,17 @@ function hide_nav() {
 }
 
 function dark_nav() {
-  var element = document.getElementById("nav");
+  var element = document.getElementsByClassName("nav-text");
   element.classList.add("black");
+
 }
 
 function light_nav() {
-  var element = document.getElementById("nav");
+  var element = document.getElementById("nav-text");
   element.classList.remove("black");
+
+  element = document.getElementById("nav-text");
+  element.classList.add("white");
 }
 
 function remove_stick(){
@@ -172,9 +177,10 @@ function Home() {
         <div className="nav" id="nav">
         <h2>Benjamin Guarasci</h2>
         <ul className = "navbar">
-            <li className='nav-item'>About</li>
-            <li className='nav-item'>Projects</li>
-            <li className='nav-item'>Contact</li>
+            <a className='nav-item nav-text' href="#about" id="nav">About</a>
+            <a className='nav-item nav-text' href="#projects" id="nav">Projects</a>
+            <a className='nav-item nav-text' href="#contact" id="nav">Contact</a>
+            <a className='nav-item nav-text' href ={Resume} id="nav">Resume</a>
         </ul>
 
         </div>
@@ -193,7 +199,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="second">
+        <div className="second" id="about">
             <div  className="viewport-div scroll-container">
                 <div className="scroll-element ">
                     <h1 className='element1 black-title'> My name is Ben. </h1>
@@ -234,7 +240,7 @@ function Home() {
             
         </div>
 
-        <div className="fourth">
+        <div className="fourth" id="contact">
             <div className="viewport-div scroll-container">
                 <Contact/>
             </div>

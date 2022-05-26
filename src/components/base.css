@@ -1,3 +1,12 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="nav"] {
+    width: 100%;
+  }
+}
+
+
+
 .App {
     text-align: center;
 }
@@ -23,9 +32,24 @@
   opacity: 1;
 }
 
+.nav-text{
+  color: white;
+}
+
+.nav-text.black{
+  color: black;
+}
+
 .nav-item{
   display: inline-block;
   margin: 20px;
+  /* color: white; */
+  text-decoration: none;
+  transition: 200ms;
+}
+.nav-item:hover{
+  color: grey;
+  transition: 200ms;
 }
 
 .nav.black{
@@ -34,6 +58,7 @@
   border-bottom: 1px solid rgba(128, 127, 127, 0.459);
   /* background-color: rgba(255, 255, 255, 0.5);   */
 }
+
 
 .first{
   height: 200vh;
@@ -267,6 +292,10 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 80px;
     margin: 0;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }
 
   .form-submit{

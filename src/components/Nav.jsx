@@ -6,9 +6,9 @@ function Nav() {
     <nav>
         <h2>Benjamin Guarasci</h2>
         <ul className = "navbar">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <a href="#about">About</a>
+            <a>Projects</a>
+            <a>Contact</a>
         </ul>
     </nav>
   );
