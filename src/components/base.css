@@ -1,11 +1,3 @@
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="nav"] {
-    width: 100%;
-  }
-}
-
-
 
 .App {
     text-align: center;
@@ -127,7 +119,16 @@
     justify-content: center;
   }
 
-  .viewport-div {
+  .about-div {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-div {
     position: relative;
     height: 100vh;
     text-align: center;
@@ -142,6 +143,7 @@
     top: 25%;
     display: block;
     padding-bottom: 100vh;
+    align-items: center;
     /* z-index: 10; */
   }
 
@@ -273,6 +275,13 @@
     padding: 20px;
   } 
 
+  /* MOBILE STYLING */
+
+  @media (max-width: 428px) {
+    .about-div {   
+      flex-direction: column;
+    }
+  }
 
   /* Form styling */
 

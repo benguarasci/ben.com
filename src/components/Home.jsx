@@ -189,33 +189,33 @@ function Home() {
                 <Nav/>
             </header> */}
 
-            <div className="viewport-div scroll-container">
-                <div className="element-container">
+            <div className="hero-div">
+                <div>
                     <h1 className='white-title'>I want to work for you.</h1>
                 </div>
             </div>
         </div>
         <div className="second" id="about">
-            <div  className="viewport-div scroll-container">
-                <div className="scroll-element ">
-                    <h1 className='element1 black-title'> My name is Ben. </h1>
-                    <p className='element1 about-body'>  
+            <div  className="about-div">
+                <div>
+                    <h1 className='black-title'> My name is Ben. </h1>
+                    <p className='about-body'>  
                     I am a creative, fast learning and diligent worker with a genuine interest in project management,
                     and a drive to learn as much as possible from every experience. Because of my passion, 
                     personality, and skill set, I feel that I would be an excellent fit for this position.
                     </p>
                 </div>
-                <div ref = {sectionRef1} className="scroll-element">
-                    <img src={ben} className='element1 about-image'></img>
+                <div>
+                    <img src={ben} className='about-image'></img>
                 </div>
             </div>
         </div> 
 
         <div id='projects' class ="projects">
 
-            <h1 className=' element2 black-title'> Projects </h1>
+            <h1 className='black-title'> Projects </h1>
             <div className='card'>
-              <div ref = {sectionRef2} className='title-card'>
+              <div className='title-card'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
                 <a href={rentsimple_link}><span className='card-link'></span></a>
