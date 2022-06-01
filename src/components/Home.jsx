@@ -109,7 +109,7 @@ window.addEventListener("scroll", () => {
     console.log("hide")
   }
 
-  if (scrollTop >= (2*window.innerHeight -30) && scrollTop <= (4.85*window.innerHeight)){
+  if (scrollTop >= (2*window.innerHeight -30) && scrollTop <= (4.90*window.innerHeight)){
     dark_nav();
     console.log("dark")
   }else{
@@ -124,6 +124,16 @@ function Home() {
     // Ref for our element
     const sectionRef1 = useRef(null);
     const sectionRef2 = useRef(null);
+    const heroRef1 = useRef(null);
+    const heroRef2 = useRef(null);
+    const heroRef3 = useRef(null);
+    const heroRef4 = useRef(null);
+    const heroRef5 = useRef(null);
+    const heroRef6 = useRef(null);
+    const heroRef7 = useRef(null);
+
+
+
 
 
     // All the ref to be observed
@@ -138,12 +148,58 @@ function Home() {
       rootMargin: "0px",
       threshold: 1
     });
+
+    //Hero Intersections
+
+    const hero1 = useIntersection(heroRef1, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero2 = useIntersection(heroRef2, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero3 = useIntersection(heroRef3, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero4 = useIntersection(heroRef4, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero5 = useIntersection(heroRef5, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero6 = useIntersection(heroRef6, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    const hero7 = useIntersection(heroRef7, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+
   
    // Animation for fading in
    const fadeIn = element => {
     gsap.to(element, 1, {
       opacity: 1,
-      y: -60,
+      y: -20,
       ease: "power4.out",
       stagger: {
         amount: 0.5
@@ -168,6 +224,34 @@ function Home() {
     ? fadeOut(".element2")
     : fadeIn(".element2");
 
+  hero1 && hero1.intersectionRatio < 0.1
+  ? fadeOut(".skill1")
+  : fadeIn(".skill1");
+
+  hero2 && hero2.intersectionRatio < 0.1
+  ? fadeOut(".skill2")
+  : fadeIn(".skill2");
+
+  hero3 && hero3.intersectionRatio < 0.1
+  ? fadeOut(".skill3")
+  : fadeIn(".skill3");
+
+  hero4 && hero4.intersectionRatio < 0.1
+  ? fadeOut(".skill4")
+  : fadeIn(".skill4");
+
+  hero5 && hero5.intersectionRatio < 0.1
+  ? fadeOut(".skill5")
+  : fadeIn(".skill5");
+
+  hero6 && hero6.intersectionRatio < 0.1
+  ? fadeOut(".skill6")
+  : fadeIn(".skill6");
+
+  hero7 && hero7.intersectionRatio < 0.1
+  ? fadeOut(".skill7")
+  : fadeIn(".skill7");
+    
   return (
     
     <div className="Home">
@@ -190,12 +274,18 @@ function Home() {
                 <Nav/>
             </header> */}
 
-            <div className="hero-div">
-                <div>
-                    <h1 className='white-title'>Not Your Average Software Engineer</h1>
-
-
-                </div>
+            <div className='gradient-text font-40'> 
+                    <h1>Not Your Average Software Engineer</h1>
+            </div>
+            <div className="gradient-text-2">
+                    <h2 className='skills skill1'>Full-Stack</h2>
+                    <h2 ref = {heroRef1} className='skills skill2'>Architecture and Design</h2>
+                    <h2 ref = {heroRef2} className='skills skill3'>Project Management</h2>
+                    <h2 ref = {heroRef3} className='skills skill4'>Agile Methodology</h2>
+                    <h2 ref = {heroRef4} className='skills skill5'>Machine Learning</h2>
+                    <h2 ref = {heroRef5} className='skills skill6'>Data Analysis</h2>
+                    <h2 ref = {heroRef6} className='skills skill7'>Software Scaleability</h2>
+                    <h2 ref = {heroRef7}></h2>
             </div>
         </div>
         <div className="second" id="about">
@@ -214,11 +304,11 @@ function Home() {
             </div>
         </div> 
 
-        <div id='projects' class ="element2 projects">
+        <div id='projects' class ="projects">
 
-            <h1 className='black-title'> Projects </h1>
+            <h1 className='black-title element2'> Projects </h1>
             <div className='card'>
-              <div className='title-card'>
+              <div ref = {sectionRef2} className='title-card rentsimple-icon'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
                 <a href={rentsimple_link}><span className='card-link'></span></a>
