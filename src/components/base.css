@@ -442,8 +442,8 @@
       }
 
       .title-card{
-        width: 70vw;
-        height: 70vw;
+        width: 50vw;
+        height: 50vw;
       }
 
       .rentsimple-icon{
@@ -511,10 +511,6 @@
 
       .card-text{
         margin: 0;
-      }
-
-      .padding-top{
-        padding-top: 12%;
       }
 
       .skills{

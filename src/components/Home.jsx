@@ -293,9 +293,8 @@ function Home() {
                 <div className="scroll-element">
                     <h1 className='element1 black-title padding-top'> My name is Ben. </h1>
                     <p className='element1 about-body'>  
-                    I am a creative, fast learning and diligent worker with a genuine interest in project management,
-                    and a drive to learn as much as possible from every experience. Because of my passion, 
-                    personality, and skill set, I feel that I would be an excellent fit for this position.
+                    I am a creative, fast learning and diligent worker with a genuine interest in software development,
+                    and a drive to learn as much as possible from every experience. I am passionate about building clean and efficient code that can be applied to the real world. I have extensive full-stack experience.
                     </p>
                 </div>
                 <div ref = {sectionRef1} className="scroll-element">
@@ -313,7 +312,7 @@ function Home() {
                 <h1 className='card-title'>RentSimple</h1>
                 <a href={rentsimple_link}><span className='card-link'></span></a>
               </div>
-              <p className='card-text'> RentSimple is a simple app created to help students find housing. </p>
+              <p className='card-text'> RentSimple is a simple react app created to help students find housing. </p>
             </div>
             <div className='card'>
               <div className=' title-card'>
@@ -321,7 +320,7 @@ function Home() {
                 <h1 className='card-title'>Ergonomyx</h1>
                 <a href={ergonomyx_link}><span className='card-link'></span></a>
               </div>
-              <p className='card-text'> RentSimple is a simple app created to help students find housing. </p>
+              <p className='card-text'> Ergonomyx.com is an ecommerce website built using flask and node.js </p>
             </div>
         </div>
 
