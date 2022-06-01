@@ -100,8 +100,8 @@
   height: 200vh;
   background:
         linear-gradient(217deg, rgba(25, 0, 255, 0.808), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(25, 0, 255, 0.808), rgba(0, 60, 255, 0) 70.71%),
-        linear-gradient(336deg, rgba(178, 228, 0, 0.8), rgba(255, 238, 0, 0.123) 70.71%);
+        linear-gradient(127deg, rgba(174, 0, 255, 0.808), rgba(0, 60, 255, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 190, 228, 0.8), rgba(255, 238, 0, 0.123) 70.71%);
 	background-size: 200% 200%;
   width: 100%;
 	animation: gradient 3s ease infinite;
