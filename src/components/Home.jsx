@@ -172,7 +172,8 @@ function Home() {
     
     <div className="Home">
         <div className="nav" id="nav">
-        <h2>Benjamin Guarasci</h2>
+        <h2 className="desktop-header">Benjamin Guarasci</h2>
+        <h2 className="mobile-header">BG</h2>
         <ul className = "navbar">
             <a className='nav-item' href="#about" id="nav">About</a>
             <a className='nav-item' href="#projects" id="nav">Projects</a>
@@ -191,27 +192,29 @@ function Home() {
 
             <div className="hero-div">
                 <div>
-                    <h1 className='white-title'>I want to work for you.</h1>
+                    <h1 className='white-title'>Not Your Average Software Engineer</h1>
+
+
                 </div>
             </div>
         </div>
         <div className="second" id="about">
-            <div  className="about-div">
-                <div>
-                    <h1 className='black-title'> My name is Ben. </h1>
-                    <p className='about-body'>  
+            <div  className="about-div scroll-container">
+                <div className="scroll-element">
+                    <h1 className='element1 black-title padding-top'> My name is Ben. </h1>
+                    <p className='element1 about-body'>  
                     I am a creative, fast learning and diligent worker with a genuine interest in project management,
                     and a drive to learn as much as possible from every experience. Because of my passion, 
                     personality, and skill set, I feel that I would be an excellent fit for this position.
                     </p>
                 </div>
-                <div>
-                    <img src={ben} className='about-image'></img>
+                <div ref = {sectionRef1} className="scroll-element">
+                    <img src={ben} className='element1 about-image'></img>
                 </div>
             </div>
         </div> 
 
-        <div id='projects' class ="projects">
+        <div id='projects' class ="element2 projects">
 
             <h1 className='black-title'> Projects </h1>
             <div className='card'>
