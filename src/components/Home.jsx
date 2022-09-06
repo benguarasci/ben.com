@@ -306,19 +306,23 @@ function Home() {
         <div id='projects' class ="projects">
 
             <h1 className='black-title element2'> Projects </h1>
+
+
             <div className='card'>
-              <div ref = {sectionRef2} className='title-card rentsimple-icon'>
+              <div className='title-card rentsimple-icon'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
-                <a href={rentsimple_link}><span className='card-link'></span></a>
+                <a href={rentsimple_link}className='card-link'></a>
               </div>
               <p className='card-text'> RentSimple is a simple react app created to help students find housing. </p>
             </div>
+
+
             <div className='card'>
               <div className=' title-card'>
                 <img className='card-image' src={ergo}></img>
                 <h1 className='card-title'>Ergonomyx</h1>
-                <a href={ergonomyx_link}><span className='card-link'></span></a>
+                <a href={ergonomyx_link} className='card-link'></a>
               </div>
               <p className='card-text'> Ergonomyx.com is an ecommerce website built using flask and node.js </p>
             </div>
