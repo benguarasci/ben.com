@@ -9,6 +9,7 @@ import ergo from "./assets/ergo.ico"
 import rentsimple from "./assets/favicon.png"
 import Nav from "./Nav"
 import Contact from "./Contact"
+import Information from "./Information"
 
 
 
@@ -294,7 +295,7 @@ function Home() {
                     <h1 className='element1 black-title padding-top'> My name is Ben. </h1>
                     <p className='element1 about-body'>  
                     I am a creative, fast learning and diligent worker with a genuine interest in software development,
-                    and a drive to learn as much as possible from every experience. I am passionate about building clean and efficient code that can be applied to the real world. I have extensive full-stack experience.
+                    and a drive to learn as much as possible from every experience. I am passionate about building software that can be applied to the real world. I have significant full-stack development and leadership experience.
                     </p>
                 </div>
                 <div ref = {sectionRef1} className="scroll-element">
@@ -309,7 +310,7 @@ function Home() {
 
 
             <div className='card'>
-              <div className='title-card rentsimple-icon'>
+              <div className='title-card'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
                 <a href={rentsimple_link}className='card-link'></a>
@@ -334,7 +335,13 @@ function Home() {
 
         <div className="fourth" id="contact">
             <div className="viewport-div scroll-container">
-                <Contact/>
+              <div className="form-container">
+                <h1 className='form-title'> Contact </h1>
+                <p className="information">532B 1008 Pandora Avenue</p>
+                <p className = "information">Victoria BC</p>
+                <a className='information' href="mailto:benguarasci@icloud.com">benguarasci@icloud.com</a>
+                <p className='information'>778-998-2335</p>
+              </div>
             </div>
         </div>
 
