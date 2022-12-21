@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './base.css';
 import { useIntersection } from "react-use";
 import gsap from "gsap";
@@ -10,6 +10,7 @@ import rentsimple from "./assets/favicon.png"
 import Nav from "./Nav"
 import Contact from "./Contact"
 import Information from "./Information"
+import Rentsimple from './rentsimple';
 
 
 
@@ -134,7 +135,7 @@ function Home() {
     const heroRef7 = useRef(null);
 
 
-
+    const [openRent, setOpenRent] = useState(false)
 
 
     // All the ref to be observed
@@ -307,13 +308,14 @@ function Home() {
         <div id='projects' class ="projects">
 
             <h1 className='black-title element2'> Projects </h1>
-
+            <Rentsimple open={openRent} onClose={() => setOpenRent(false)} />
 
             <div className='card'>
               <div className='title-card'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
-                <a href={rentsimple_link}className='card-link'></a>
+                {/* <a href={rentsimple_link}className='card-link'></a> */}
+                <button onClick={() => setOpenRent(true)}>Toggle</button>
               </div>
               <p className='card-text'> RentSimple is a simple react app created to help students find housing. </p>
             </div>
@@ -323,7 +325,7 @@ function Home() {
               <div className=' title-card'>
                 <img className='card-image' src={ergo}></img>
                 <h1 className='card-title'>Ergonomyx</h1>
-                <a href={ergonomyx_link} className='card-link'></a>
+                {/* <a href={ergonomyx_link} className='card-link'></a> */}
               </div>
               <p className='card-text'> Ergonomyx.com is an ecommerce website built using flask and node.js </p>
             </div>
