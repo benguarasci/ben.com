@@ -1,11 +1,15 @@
 
 .App {
   width: 100%;
-    text-align: center;
+  text-align: center;
 }
 
-.Home{
+.home{
   width: 100%;
+}
+
+.home.modal-open{
+  position: fixed;  
 }
 
 .gradient-text{
@@ -223,7 +227,7 @@
 
   .title-card {
     display: inline-block;
-    margin: 5%;
+
     align-items: center;
     width: 20vw;
     height: 20vw;
@@ -314,7 +318,8 @@
   .fourth{
     background-color: black;
     height: 100vh;
-    z-index: 100;
+    /* z-index: -1;
+    position: relative; */
   }
 
   .blocker{
@@ -333,6 +338,8 @@
     font-weight: bold;
     margin: auto;
     padding-top: 10px;
+    position: relative;
+    z-index: 5;
   }
 
  

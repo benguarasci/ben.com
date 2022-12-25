@@ -10,7 +10,8 @@ import rentsimple from "./assets/favicon.png"
 import Nav from "./Nav"
 import Contact from "./Contact"
 import Information from "./Information"
-import Rentsimple from './rentsimple';
+import Rentsimple from './modals/rentsimple';
+import Ergonomyx from './modals/ergonomyx';
 
 
 
@@ -82,6 +83,21 @@ function light_nav() {
   element.classList.remove("black");
 }
 
+function preventScroll(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  return false;
+}
+
+function disable_scroll(){
+  document.querySelector('.home').addEventListener('wheel', preventScroll);
+}
+
+function enable_scroll(){
+    document.querySelector('.home').removeEventListener('wheel', preventScroll);
+}
+
 function remove_stick(){
   var element = document.getElementById("projects");
   element.classList.add("no-stick")
@@ -90,6 +106,26 @@ function remove_stick(){
 function add_stick(){
   var element = document.getElementById("projects");
   element.classList.remove("no-stick")
+}
+
+function controlScroll(modal){
+  if(modal == true){
+    var element = document.getElementById("home");
+    element.classList.add("model-open")
+  }else{
+    element.classList.remove("model-open")
+  }
+}
+
+function stop_scroll(){
+    var element = document.getElementById("home");
+    element.classList.add("model-open")
+    console.log("stop_scroll")
+}
+function resume_scroll(){
+  var element = document.getElementById("home");
+    element.classList.remove("model-open")
+    console.log("resume_scroll")
 }
 
 document.querySelectorAll('.hero-text').forEach(item => {
@@ -136,6 +172,10 @@ function Home() {
 
 
     const [openRent, setOpenRent] = useState(false)
+
+    const [openErgo, setOpenErgo] = useState(false)
+
+
 
 
     // All the ref to be observed
@@ -256,7 +296,7 @@ function Home() {
     
   return (
     
-    <div className="Home">
+    <div id="home" className="home">
         <div className="nav" id="nav">
         <h2 className="desktop-header">Benjamin Guarasci</h2>
         <h2 className="mobile-header">BG</h2>
@@ -308,26 +348,28 @@ function Home() {
         <div id='projects' class ="projects">
 
             <h1 className='black-title element2'> Projects </h1>
-            <Rentsimple open={openRent} onClose={() => setOpenRent(false)} />
+            
+            <Rentsimple open={openRent} onClose={() => {setOpenRent(false); enable_scroll()}} />
+            <Ergonomyx open={openErgo} onClose={() => {setOpenErgo(false); enable_scroll()}} />
 
-            <div className='card'>
+            <div onClick={() => {setOpenRent(true); disable_scroll();}} className='card'>
+            {/* <div onClick={stop_scroll} className='card'> */}
+              
               <div className='title-card'>
                 <img className='card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
-                {/* <a href={rentsimple_link}className='card-link'></a> */}
-                <button onClick={() => setOpenRent(true)}>Toggle</button>
+                {/* <a onClick={() => setOpenRent(true)} className='card-link'></a> */}
+                {/* <button onClick={() => setOpenRent(true)}>Toggle</button> */}
               </div>
-              <p className='card-text'> RentSimple is a simple react app created to help students find housing. </p>
+              <p className='card-text'> Software tool created to help renters in low vacancy markets find housing. </p>
             </div>
-
-
-            <div className='card'>
+            <div onClick={() => {setOpenErgo(true); disable_scroll()}} className='card'>
               <div className=' title-card'>
                 <img className='card-image' src={ergo}></img>
                 <h1 className='card-title'>Ergonomyx</h1>
-                {/* <a href={ergonomyx_link} className='card-link'></a> */}
+                {/* <a  className='card-link'></a> */}
               </div>
-              <p className='card-text'> Ergonomyx.com is an ecommerce website built using flask and node.js </p>
+              <p className='card-text'> Enables companies to track how their employees use their office space.  </p>
             </div>
         </div>
 
