@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c3c7454.css",
-    "main.js": "/static/js/main.5dfa9b80.js",
+    "main.css": "/static/css/main.5f5673e2.css",
+    "main.js": "/static/js/main.1e701c74.js",
     "static/js/787.336e5505.chunk.js": "/static/js/787.336e5505.chunk.js",
+    "static/media/rentsimple_screenshot.png": "/static/media/rentsimple_screenshot.6740b453483a1a81f379.png",
     "static/media/ben.jpeg": "/static/media/ben.fb15d3560e58efc12a59.jpeg",
+    "static/media/ergo-dash.png": "/static/media/ergo-dash.a2c3c3bfb38cdb35a9d3.png",
     "static/media/ergo.ico": "/static/media/ergo.be60753e7f125ddcce42.ico",
-    "static/media/resume.pdf": "/static/media/resume.eb3c28ac12cf57b66c84.pdf",
+    "static/media/resume.pdf": "/static/media/resume.5f9f874b1c07ee0a2c67.pdf",
     "index.html": "/index.html",
-    "main.2c3c7454.css.map": "/static/css/main.2c3c7454.css.map",
-    "main.5dfa9b80.js.map": "/static/js/main.5dfa9b80.js.map",
+    "main.5f5673e2.css.map": "/static/css/main.5f5673e2.css.map",
+    "main.1e701c74.js.map": "/static/js/main.1e701c74.js.map",
     "787.336e5505.chunk.js.map": "/static/js/787.336e5505.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c3c7454.css",
-    "static/js/main.5dfa9b80.js"
+    "static/css/main.5f5673e2.css",
+    "static/js/main.1e701c74.js"
   ]
 }
