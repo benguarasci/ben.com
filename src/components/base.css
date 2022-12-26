@@ -253,7 +253,7 @@
     margin-top: 10%;
     width: 50%;
     background: white;
-    border-radius: 30px;
+    border-radius: 15px;
   }
 
   .card{
@@ -312,13 +312,13 @@
     padding-left: 10%;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 40px;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
   }
 
   .card-text{
     padding-right: 10%;
     padding-left: 10%;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
     margin-top: 20px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 20px;

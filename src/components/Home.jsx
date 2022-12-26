@@ -117,12 +117,12 @@ function controlScroll(modal){
   }
 }
 
-function stop_scroll(){
+function stop_touch(){
     var element = document.getElementById("home");
     element.classList.add("model-open")
     console.log("stop_scroll")
 }
-function resume_scroll(){
+function resume_touch(){
   var element = document.getElementById("home");
     element.classList.remove("model-open")
     console.log("resume_scroll")
