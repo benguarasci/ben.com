@@ -385,6 +385,7 @@ function Home() {
                 <p className = "information">Victoria BC</p>
                 <a className='information' href="mailto:benguarasci@icloud.com">benguarasci@icloud.com</a>
                 <p className='information'>778-998-2335</p>
+                <a className='information' target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ben-guarasci-829945167/">LinkedIn</a>
               </div>
             </div>
         </div>
