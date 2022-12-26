@@ -352,20 +352,20 @@ function Home() {
             <Rentsimple open={openRent} onClose={() => {setOpenRent(false); enable_scroll()}} />
             <Ergonomyx open={openErgo} onClose={() => {setOpenErgo(false); enable_scroll()}} />
 
-            <div onClick={() => {setOpenRent(true); disable_scroll();}} className='card'>
+            <div onClick={() => {setOpenRent(true); disable_scroll();}} className='simple-card'>
             {/* <div onClick={stop_scroll} className='card'> */}
               
-              <div className='title-card'>
-                <img className='card-image' src={rentsimple}></img>
+              <div className='simple-title-card'>
+                <img className='simple-card-image' src={rentsimple}></img>
                 <h1 className='card-title'>RentSimple</h1>
                 {/* <a onClick={() => setOpenRent(true)} className='card-link'></a> */}
                 {/* <button onClick={() => setOpenRent(true)}>Toggle</button> */}
               </div>
               <p className='card-text'> Software tool created to help renters in low vacancy markets find housing. </p>
             </div>
-            <div onClick={() => {setOpenErgo(true); disable_scroll()}} className='card'>
-              <div className=' title-card'>
-                <img className='card-image' src={ergo}></img>
+            <div onClick={() => {setOpenErgo(true); disable_scroll()}} className='simple-card'>
+              <div className='simple-title-card'>
+                <img className='simple-card-image' src={ergo}></img>
                 <h1 className='card-title'>Ergonomyx</h1>
                 {/* <a  className='card-link'></a> */}
               </div>

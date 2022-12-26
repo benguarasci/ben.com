@@ -114,7 +114,7 @@
 .about-image{
   height: 60vh;
   margin-right: 90px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 
@@ -217,6 +217,45 @@
     /* z-index: 10; */
   }
 
+  .simple-card{
+    display: inline-block;
+    margin: 5%;
+    align-items: center;
+
+    /* z-index: 100; */
+    width: 20vw;
+  }
+
+  .simple-title-card{
+    display: inline-block;
+
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 15px;
+    /* background: rgb(41, 41, 41); */
+    /* background: rgba(122, 122, 122, 0.2); */
+    /* border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2); */
+    background: rgba(41, 41, 41, 0.8);
+    border: 1px solid rgba(128, 127, 127, 0.459);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(4px);
+    box-shadow: -3px 4px 8px 0 rgba(0, 0, 0, 0.4), -3px 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 300ms;
+  }
+
+  .simple-title-card:hover{
+    transform: scale(1.01);
+  }
+
+  .simple-card-image{
+    margin-top: 10%;
+    width: 50%;
+    background: white;
+    border-radius: 30px;
+  }
+
   .card{
     display: inline-block;
     margin: 5%;
@@ -224,6 +263,8 @@
     /* z-index: 100; */
     width: 20vw;
   }
+
+
 
   .title-card {
     display: inline-block;
@@ -269,15 +310,15 @@
     font-weight: bold;
     padding-right: 10%;
     padding-left: 10%;
-    color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 40px;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   .card-text{
     padding-right: 10%;
     padding-left: 10%;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 20px;
@@ -526,12 +567,22 @@
         width: 100%
 
       }
+      .simple-card{
+        display: block;
+        margin: auto;
+        width: 100%
+        }
 
       .card-title{
         font-size: 30px;
       }
 
       .title-card{
+        width: 50vw;
+        height: 50vw;
+      }
+
+      .simple-title-card{
         width: 50vw;
         height: 50vw;
       }
@@ -601,7 +652,7 @@
       }
 
       .card-text{
-        margin: 0;
+        margin-top: 8px;
       }
 
       .skills{
