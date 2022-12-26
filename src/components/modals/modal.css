@@ -71,7 +71,7 @@
 @media (max-width: 1028px) {
 
     .modalContainer{
-        width: 80%;
+        width: 40vh;
     }
 
     .imageContainer{
