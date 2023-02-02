@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.7850dba7.css",
-    "main.js": "/static/js/main.02208f0c.js",
+    "main.js": "/static/js/main.fdeaf5ba.js",
     "static/js/787.336e5505.chunk.js": "/static/js/787.336e5505.chunk.js",
     "static/media/rentsimple_screenshot.png": "/static/media/rentsimple_screenshot.6740b453483a1a81f379.png",
     "static/media/ben.jpeg": "/static/media/ben.fb15d3560e58efc12a59.jpeg",
     "static/media/ergo-dash.png": "/static/media/ergo-dash.a2c3c3bfb38cdb35a9d3.png",
     "static/media/ergo.ico": "/static/media/ergo.be60753e7f125ddcce42.ico",
-    "static/media/resume.pdf": "/static/media/resume.5f9f874b1c07ee0a2c67.pdf",
+    "static/media/resume.pdf": "/static/media/resume.284276a4f036e33aee0c.pdf",
     "index.html": "/index.html",
     "main.7850dba7.css.map": "/static/css/main.7850dba7.css.map",
-    "main.02208f0c.js.map": "/static/js/main.02208f0c.js.map",
+    "main.fdeaf5ba.js.map": "/static/js/main.fdeaf5ba.js.map",
     "787.336e5505.chunk.js.map": "/static/js/787.336e5505.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7850dba7.css",
-    "static/js/main.02208f0c.js"
+    "static/js/main.fdeaf5ba.js"
   ]
 }
