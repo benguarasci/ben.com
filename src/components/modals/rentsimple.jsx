@@ -41,7 +41,7 @@ const Rentsimple = ({ open,onClose }) => {
                     <p>It works by consolodating postings across several websites using python web scrapers and displaying them on a single page</p>
                     <p>It's backend is a Django-PostgreSQL docker container that is hosted on a AWS EC2 instance.</p>
                     <p>The front end is a React.js app hosted on vercel.</p>
-                    <a href='https://www.rentapply.ca' target="_blank" rel="noopener noreferrer" className='modalLink'>Link</a>
+                    <a href='https://www.rent-simple.com' target="_blank" rel="noopener noreferrer" className='modalLink'>Link</a>
                 </div>
 
             </motion.div>
